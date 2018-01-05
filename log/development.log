@@ -346,3 +346,31 @@ Processing by ArticlesController#show as HTML
   [1m[36mArticle Load (0.4ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 1]]
   Rendered articles/show.html.erb within layouts/application (2.1ms)
 Completed 200 OK in 80ms (Views: 55.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles" for 96.230.191.165 at 2018-01-05 00:46:51 +0000
+Cannot render console from 96.230.191.165! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.4ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 57ms (Views: 55.3ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/articles/1" for 96.230.191.165 at 2018-01-05 00:46:59 +0000
+Cannot render console from 96.230.191.165! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"p3ucUKcn0xXMiMqvk9/+xfjaaNBjl8Qk7X2W409Z0AazXi7jvUxlPCq4ADkYl6UQXkjE2toCuZBZfgi7UWz2vQ==", "id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.5ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 1]]
+  [1m[35m (3.2ms)[0m  commit transaction
+Redirected to http://67.205.130.239:58455/articles
+Completed 302 Found in 12ms (ActiveRecord: 4.6ms)
+
+
+Started GET "/articles" for 96.230.191.165 at 2018-01-05 00:46:59 +0000
+Cannot render console from 96.230.191.165! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 69ms (Views: 65.0ms | ActiveRecord: 0.3ms)
