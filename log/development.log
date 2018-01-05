@@ -277,3 +277,72 @@ Cannot render console from 96.230.191.165! Allowed networks: 127.0.0.1, ::1, 127
 Processing by ArticlesController#index as HTML
   [1m[35mArticle Load (0.3ms)[0m  SELECT "articles".* FROM "articles"
   Rendered articles/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 2362ms (Views: 2333.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/articles" for 96.230.191.165 at 2018-01-05 00:46:35 +0000
+Cannot render console from 96.230.191.165! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 57ms (Views: 55.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/articles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 96.230.191.165 at 2018-01-05 00:46:35 +0000
+Cannot render console from 96.230.191.165! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-bad0b3a78372225358d5b3310c4c3e17b807d8b89bbc75d2d6d6519498777a13.css?body=1" for 96.230.191.165 at 2018-01-05 00:46:35 +0000
+Cannot render console from 96.230.191.165! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 96.230.191.165 at 2018-01-05 00:46:35 +0000
+Cannot render console from 96.230.191.165! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 96.230.191.165 at 2018-01-05 00:46:35 +0000
+Cannot render console from 96.230.191.165! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 96.230.191.165 at 2018-01-05 00:46:35 +0000
+Cannot render console from 96.230.191.165! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 96.230.191.165 at 2018-01-05 00:46:35 +0000
+Cannot render console from 96.230.191.165! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 96.230.191.165 at 2018-01-05 00:46:35 +0000
+Cannot render console from 96.230.191.165! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 96.230.191.165 at 2018-01-05 00:46:35 +0000
+Cannot render console from 96.230.191.165! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/articles/new" for 96.230.191.165 at 2018-01-05 00:46:38 +0000
+Cannot render console from 96.230.191.165! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (43.1ms)
+  Rendered articles/new.html.erb within layouts/application (51.4ms)
+Completed 200 OK in 112ms (Views: 105.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/articles" for 96.230.191.165 at 2018-01-05 00:46:45 +0000
+Cannot render console from 96.230.191.165! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kd5Z7LAvX69+Ds/4hRzrjNkkygMB8hBvIkbZsGpyZWaF++tfqkTphpg+BW4OVLBZf7ZmCbhnbduWRUfodEdD3Q==", "article"=>{"title"=>"T", "body"=>"jhjlljm"}, "commit"=>"Create Article"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "articles" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "T"], ["body", "jhjlljm"], ["created_at", "2018-01-05 00:46:45.150440"], ["updated_at", "2018-01-05 00:46:45.150440"]]
+  [1m[35m (11.8ms)[0m  commit transaction
+Redirected to http://67.205.130.239:58455/articles/1
+Completed 302 Found in 41ms (ActiveRecord: 12.6ms)
+
+
+Started GET "/articles/1" for 96.230.191.165 at 2018-01-05 00:46:45 +0000
+Cannot render console from 96.230.191.165! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered articles/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 80ms (Views: 55.3ms | ActiveRecord: 0.4ms)
